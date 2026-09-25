@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: FitNest
+        working-directory: FitNest/FitNest
 
     steps:
       - name: Checkout code
@@ -35,4 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fitnest-debug-apk
-          path: FitNest/app/build/outputs/apk/debug/*.apk
+          path: FitNest/FitNest/app/build/outputs/apk/debug/*.apk
